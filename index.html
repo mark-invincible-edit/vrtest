@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knuckle Tag – chase bots on your knuckles in VR</title>
+<meta name="description" content="A WebXR tag game. Push off the ground with your hands, no legs, five bots, one of them is it.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}
+</script>
+</head>
+<body>
+<main>
+  <h1>Knuckle<br>Tag</h1>
+  <div class="side">
+    <p>Five bots, one of them is it. No legs. Throw your hands into the ground and shove yourself across the arena.</p>
+    <button id="enter" type="button" disabled>Checking VR…</button>
+    <p id="status" role="status"></p>
+    <h2>How it works</h2>
+    <dl>
+      <dt>Move</dt><dd>Hands into the ground or any wall, push away. Let go to fly.</dd>
+      <dt>Climb</dt><dd>Same push on pillars and the stepped rocks.</dd>
+      <dt>Tag</dt><dd>When your left wrist says IT, touch a bot with your body or hands.</dd>
+      <dt>Score</dt><dd>Stay free as long as possible. Streak and best are on your left wrist.</dd>
+    </dl>
+    <p class="small">Needs a headset browser (Quest Browser) over https.</p>
+  </div>
+</main>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
