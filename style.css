@@ -1,0 +1,18 @@
+:root{--paper:#ece6d6;--ink:#1d1b19;--rust:#c2482b;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--paper:#1d1b19;--ink:#ece6d6}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.5 "Courier New",ui-monospace,monospace}
+main{min-height:100svh;display:grid;grid-template-columns:3fr 2fr;gap:2rem 4rem;align-items:end;padding:clamp(1.25rem,5vw,4rem)}
+h1{margin:0;font:900 clamp(3.5rem,13vw,10rem)/.82 Impact,"Arial Black",sans-serif;text-transform:uppercase;letter-spacing:-.03em}
+h2{margin:2rem 0 .5rem;font-size:1rem;text-transform:uppercase;letter-spacing:.12em}
+.side{max-width:34rem}
+button{font:inherit;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:.9rem 1.6rem;color:#fff;background:var(--rust);border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink);cursor:pointer}
+button:active{transform:translate(4px,4px);box-shadow:2px 2px 0 var(--ink)}
+button:disabled{background:transparent;color:var(--ink);border-style:dashed;box-shadow:none;cursor:not-allowed}
+button:focus-visible{outline:3px solid var(--ink);outline-offset:4px}
+dl{display:grid;grid-template-columns:5rem 1fr;gap:.4rem 1rem;margin:0}
+dt{font-weight:700;text-transform:uppercase}
+dd{margin:0}
+.small{font-size:.85rem;margin-top:1.5rem}
+body.vr main{display:none}
+@media (max-width:760px){main{grid-template-columns:1fr;align-items:start}}
